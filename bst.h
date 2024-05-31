@@ -18,10 +18,10 @@ typedef struct binary_tree_node {
 	BinaryTreeValue value;
 };
 
-// Allocates root node memory.
+// Returns structure with root initialized to NULL.
 BinaryTree binary_tree_init(void);
 
-// Frees memory associated with root node.
+// Recursively destroys tree starting from root and sets root to NULL.
 void binary_tree_deinit(BinaryTree *const tree);
 
 // Searches for value by key in a tree.
